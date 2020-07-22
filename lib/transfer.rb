@@ -26,7 +26,8 @@ class Transfer
   end
   
   def reverse_transfer
-    
+      self.sender.deposit(amount)
+      self.receiver.deposit(-amount)
   end
   
 end
